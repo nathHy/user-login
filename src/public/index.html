@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Portal</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="client.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class='container'>
+    <h1> Login Form </h1>
+    <form id='loginForm' onSubmit='return false'>
+      <div>
+        <label>Username</label>
+        <input type="text" name="username" id='username'>
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password" id='password'>
+      </div>
+      <button id='login'>Login</button>
+      <button id='create'>Create</button>
+      <button id='logout'>Logout</button>
+    </form>
+    <div id='message'></div>
+    <div class='container' id='information' style='visibility:hidden'>
+      <table class='container' id='userList'>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Created at</th>
+      </table>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
