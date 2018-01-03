@@ -9,6 +9,8 @@ apiRouter.route('/user')
     if (req.session.user) {
       let { id, username, createdAt } = req.session.user;
       sendResponse(res, 200, { id, username, createdAt })
+    } else {
+      throw new customError('No session user available', 500);
     }
   })
 
