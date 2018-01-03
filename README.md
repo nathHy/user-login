@@ -13,4 +13,4 @@ Basic login portal
 - Run the app
 `node app.js`
 - Browse to localhost:3000
-- Login with `admin`/`password
+- Login with `admin`/`password`
